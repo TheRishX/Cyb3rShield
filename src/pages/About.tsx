@@ -1,6 +1,7 @@
 import { motion, useScroll, useTransform } from "motion/react";
 import React, { useState, useEffect } from "react";
 import { PhoneCall, Terminal, Crosshair, Shield, Activity, Network } from "lucide-react";
+import { SEO } from "../components/SEO";
 
 const TerminalText = ({ text, delay = 0 }: { text: string, delay?: number }) => {
   return (
@@ -36,6 +37,11 @@ export const About = () => {
 
   return (
     <div className="min-h-screen bg-[#0B0B0D] text-white font-sans overflow-hidden perspective-1200 relative pt-20">
+      <SEO 
+        title="About Cyb3r Shield | Cybersecurity Experts"
+        description="Learn about Cyb3r Shield, Asia's premier cybersecurity company. We deliver mission-critical security services, zero-trust architecture, and unyielding defense."
+        url="https://cyb3rshield.com/about"
+      />
       
       {/* 4D BACKGROUND SYSTEM */}
       <div className="fixed inset-0 z-0 pointer-events-none">

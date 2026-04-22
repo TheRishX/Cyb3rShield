@@ -2,7 +2,11 @@ import { LegalLayout } from "../components/LegalLayout";
 
 export const Disclaimer = () => {
   return (
-    <LegalLayout title="Disclaimer">
+    <LegalLayout 
+      title="Disclaimer"
+      description="Important disclaimers and operational boundaries for utilizing intelligence and services provided by Cyb3r Shield."
+      url="/disclaimer"
+    >
       <section>
         <h2 className="text-2xl font-headline text-white font-bold mb-4">General Information Clause</h2>
         <p>The strategic information, actionable intelligence, and services provided by Cyb3r Shield are intended for tactical educational and operational defensive implementation. We provide this data “as is” for structural alignment.</p>

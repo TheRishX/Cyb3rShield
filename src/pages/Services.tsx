@@ -1,6 +1,7 @@
 import { motion, useScroll, useTransform, AnimatePresence } from "motion/react";
 import React, { useState, useRef, useEffect } from "react";
 import { Shield, PhoneCall, Crosshair, Lock, Network, Users } from "lucide-react";
+import { SEO } from "../components/SEO";
 
 // The Module details for zooming in
 const MODULE_DETAILS = {
@@ -104,6 +105,20 @@ export const Services = () => {
 
   return (
     <div ref={containerRef} className="min-h-screen bg-[#0B0B0D] text-white font-sans overflow-hidden perspective-1200 relative">
+      <SEO 
+        title="Penetration Testing & Security Solutions | Cyb3r Shield"
+        description="Protect your business with expert penetration testing, security governance, and training. Secure your systems with Cyb3r Shield today."
+        url="https://cyb3rshield.com/services"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "Cybersecurity Consulting",
+          "provider": {
+            "@type": "Organization",
+            "name": "Cyb3r Shield"
+          }
+        }}
+      />
       
       {/* Background 4D Grid & Effects */}
       <div className="fixed inset-0 z-0 pointer-events-none">

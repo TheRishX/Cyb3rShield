@@ -2,7 +2,11 @@ import { LegalLayout } from "../components/LegalLayout";
 
 export const Terms = () => {
   return (
-    <LegalLayout title="Terms & Conditions">
+    <LegalLayout 
+      title="Terms & Conditions"
+      description="Review our Terms & Conditions. Read the operating boundaries and legal agreements for utilizing Cyb3r Shield's security systems and protocols."
+      url="/terms-and-conditions"
+    >
       <section>
         <h2 className="text-2xl font-headline text-white font-bold mb-4">1. Introduction</h2>
         <p>Welcome to Cyb3r Shield. These Terms & Conditions outline the rules and regulations for the use of our tactical cybersecurity services and digital infrastructure. By accessing this system, we assume you accept these terms in full.</p>

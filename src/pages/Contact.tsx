@@ -1,6 +1,7 @@
 import { motion, useScroll, useTransform } from "motion/react";
 import React, { useState, useEffect } from "react";
 import { PhoneCall, Terminal, Lock, Send, ShieldCheck, Mail, User } from "lucide-react";
+import { SEO } from "../components/SEO";
 
 const TerminalText = ({ text, delay = 0, onComplete }: { text: string, delay?: number, onComplete?: () => void }) => {
   return (
@@ -45,6 +46,24 @@ export const Contact = () => {
 
   return (
     <div className="min-h-screen bg-[#0B0B0D] text-white font-sans overflow-hidden perspective-1200 relative pt-20">
+      <SEO 
+        title="Contact Cybersecurity Experts | Cyb3r Shield"
+        description="Initiate a secure connection with Cyb3r Shield. Contact our cybersecurity experts for enterprise defense, penetration testing, and incident response."
+        url="https://cyb3rshield.com/contact"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "ContactPage",
+          "mainEntity": {
+            "@type": "Organization",
+            "name": "Cyb3r Shield",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+1234567890",
+              "contactType": "customer service"
+            }
+          }
+        }}
+      />
       
       {/* 4D BACKGROUND SYSTEM: CONNECTION HUB */}
       <div className="fixed inset-0 z-0 pointer-events-none">

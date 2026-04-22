@@ -1,9 +1,23 @@
 import React from "react";
 import { motion } from "motion/react";
+import { SEO } from "./SEO";
 
-export const LegalLayout = ({ title, children }: { title: string, children: React.ReactNode }) => {
+interface LegalLayoutProps {
+  title: string;
+  description: string;
+  url: string;
+  children: React.ReactNode;
+}
+
+export const LegalLayout = ({ title, description, url, children }: LegalLayoutProps) => {
   return (
     <div className="min-h-screen bg-[#0B0B0D] text-white font-sans pt-32 pb-24 relative overflow-hidden">
+      <SEO 
+        title={`${title} | Cyb3r Shield`}
+        description={description}
+        url={`https://cyb3rshield.com${url}`}
+      />
+      
       {/* Subtle animated network grid */}
       <div className="absolute inset-0 grid-bg-thin opacity-10 pointer-events-none" />
       <div className="absolute top-0 left-0 right-0 h-[100px] bg-gradient-to-b from-primary/5 to-transparent pointer-events-none" />

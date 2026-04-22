@@ -2,7 +2,11 @@ import { LegalLayout } from "../components/LegalLayout";
 
 export const SecurityPolicy = () => {
   return (
-    <LegalLayout title="Security Policy">
+    <LegalLayout 
+      title="Security Policy"
+      description="Review Cyb3r Shield's Security Policy. We engineer environments operating under continuous breach attempts ensuring robust data protection."
+      url="/security-policy"
+    >
       <section>
         <h2 className="text-2xl font-headline text-white font-bold mb-4">Security Commitment</h2>
         <p>Our commitment to security is absolute. We engineer environments operating under the assumption of continuous breach attempts. Efficacy is our baseline metric; there is no compromise when defending structural integrity.</p>

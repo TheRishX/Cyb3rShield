@@ -2,6 +2,7 @@ import { motion, useScroll, useTransform } from "motion/react";
 import { Shield, Radar, Cpu, ArrowRight, CheckCircle2 } from "lucide-react";
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import { SEO } from "../components/SEO";
 
 const HeroSection = () => {
   const { scrollY } = useScroll();
@@ -206,8 +207,27 @@ const WorkingTerminal = () => {
 };
 
 export const Home = () => {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Cyb3r Shield",
+    "url": "https://cyb3rshield.com",
+    "logo": "https://cyb3rshield.com/logo.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1234567890",
+      "contactType": "customer service"
+    }
+  };
+
   return (
     <div className="bg-surface font-sans">
+      <SEO 
+        title="Cybersecurity Services & Penetration Testing | Cyb3r Shield"
+        description="Protect your business with expert penetration testing, security governance, and training. Secure your systems with Cyb3r Shield today."
+        schema={schema}
+        url="https://cyb3rshield.com"
+      />
       <main>
         <HeroSection />
 

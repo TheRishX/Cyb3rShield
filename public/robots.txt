@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cyb3rshield.com/sitemap.xml

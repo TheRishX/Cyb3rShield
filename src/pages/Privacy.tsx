@@ -2,7 +2,11 @@ import { LegalLayout } from "../components/LegalLayout";
 
 export const Privacy = () => {
   return (
-    <LegalLayout title="Privacy Policy">
+    <LegalLayout 
+      title="Privacy Policy"
+      description="Cybe3r Shield Privacy Policy. Understand our zero-trust data protection practices and how we handle telemetry to protect your infrastructure."
+      url="/privacy-policy"
+    >
       <section>
         <h2 className="text-2xl font-headline text-white font-bold mb-4">Information Collected</h2>
         <p>We collect essential operational parameters which may include identification markers, infrastructure logs, and communication data necessary to establish a secured, tactical perimeter. We do not aggregate non-essential telemetry.</p>
